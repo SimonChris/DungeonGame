@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cg0fxnqrfthwg"]
+
+[ext_resource type="PackedScene" uid="uid://8ibojr6fumom" path="res://objects/torch.glb" id="1_i3qqe"]
+
+[node name="Torch" unique_id=1270004369 instance=ExtResource("1_i3qqe")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="RootNode" parent_id_path=PackedInt32Array(1082094509) index="1" unique_id=2027444790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04892695, 0.60260046, 0.12135351)
+light_color = Color(0.99607843, 0.48235294, 0, 1)
+distance_fade_enabled = true

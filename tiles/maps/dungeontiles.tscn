@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://cjg5ve0ndbj8s"]
+
+[ext_resource type="PackedScene" uid="uid://d0nocyiio5ie6" path="res://tiles/maps/gate_2.tscn" id="1_cqn28"]
+[ext_resource type="PackedScene" uid="uid://d4e6fcx5ooy5k" path="res://tiles/maps/corridor_2.tscn" id="1_plmxm"]
+[ext_resource type="PackedScene" uid="uid://de5ded06m4j4u" path="res://tiles/maps/gate_door_2.tscn" id="2_4nv7q"]
+[ext_resource type="PackedScene" uid="uid://cjsxhnxbbmd48" path="res://tiles/maps/corridor_corner_2.tscn" id="2_7d7kr"]
+[ext_resource type="PackedScene" uid="uid://cgt5wkfqca67c" path="res://tiles/maps/corridor_end_2.tscn" id="3_38mi7"]
+[ext_resource type="PackedScene" uid="uid://chwfbwhkmon53" path="res://tiles/maps/gate_door_window_2.tscn" id="3_galxx"]
+[ext_resource type="PackedScene" uid="uid://dkahbts4fsd56" path="res://tiles/maps/gate_metal_bars_2.tscn" id="4_1xknj"]
+[ext_resource type="PackedScene" uid="uid://orpmuj36k5t4" path="res://tiles/maps/room_corner_2.tscn" id="5_2dgvg"]
+[ext_resource type="PackedScene" uid="uid://vmpqvo2v1dl4" path="res://tiles/maps/room_large_2.tscn" id="6_avba6"]
+[ext_resource type="PackedScene" uid="uid://bl2glmafx1kf3" path="res://tiles/maps/room_large_variation_2.tscn" id="7_iaaqx"]
+[ext_resource type="PackedScene" uid="uid://omf41poiu06k" path="res://tiles/maps/room_small_2.tscn" id="8_xmu4x"]
+[ext_resource type="PackedScene" uid="uid://c24u7j871teun" path="res://tiles/maps/room_small_variation_2.tscn" id="9_30b4y"]
+[ext_resource type="PackedScene" uid="uid://bllsq33xn0cq5" path="res://tiles/maps/room_wide_2.tscn" id="10_q3rpt"]
+[ext_resource type="PackedScene" uid="uid://by2wbv1ey0ibk" path="res://tiles/maps/room_wide_variation_2.tscn" id="11_uavjk"]
+[ext_resource type="PackedScene" uid="uid://c4m76cq1xoxre" path="res://tiles/maps/stairs_2.tscn" id="12_xye08"]
+[ext_resource type="PackedScene" uid="uid://45j3tm284de3" path="res://tiles/maps/stairs_wide_2.tscn" id="13_nhg8r"]
+[ext_resource type="PackedScene" uid="uid://rjrmkf7mbhug" path="res://tiles/maps/template_corner_2.tscn" id="14_5qstq"]
+[ext_resource type="PackedScene" uid="uid://cnavkli0u5a12" path="res://tiles/maps/template_detail_2.tscn" id="15_6wtwp"]
+[ext_resource type="PackedScene" uid="uid://hjp2xwwypsv8" path="res://tiles/maps/template_floor_2.tscn" id="16_bn6aa"]
+[ext_resource type="PackedScene" uid="uid://bo56dshyet44m" path="res://tiles/maps/template_floor_big_2.tscn" id="17_4lbyl"]
+[ext_resource type="PackedScene" uid="uid://c7wyxcki6afe6" path="res://tiles/maps/template_floor_detail_2.tscn" id="18_8pnxg"]
+[ext_resource type="PackedScene" uid="uid://dq0jm5gbcd6bj" path="res://tiles/maps/template_floor_detail_a_2.tscn" id="19_3033a"]
+[ext_resource type="PackedScene" uid="uid://v531hs3317uq" path="res://tiles/maps/template_floor_layer_2.tscn" id="20_wjg47"]
+[ext_resource type="PackedScene" uid="uid://dl8w1fbs4sg4h" path="res://tiles/maps/template_floor_layer_hole_2.tscn" id="21_ltw3g"]
+[ext_resource type="PackedScene" uid="uid://bmw6y7nhf7usr" path="res://tiles/maps/template_floor_layer_raised_2.tscn" id="22_spalu"]
+[ext_resource type="PackedScene" uid="uid://cee4xnihpptjg" path="res://tiles/maps/template_wall_2.tscn" id="23_f8ukl"]
+[ext_resource type="PackedScene" uid="uid://d1s61h7fyjdp3" path="res://tiles/maps/template_wall_corner_2.tscn" id="24_6po0b"]
+[ext_resource type="PackedScene" uid="uid://dmkcvvl0trlh1" path="res://tiles/maps/template_wall_detail_a_2.tscn" id="25_qac73"]
+[ext_resource type="PackedScene" uid="uid://bxbyi4xyxgpr7" path="res://tiles/maps/template_wall_half_2.tscn" id="26_8pxwi"]
+[ext_resource type="PackedScene" uid="uid://ysvuiw06dlq5" path="res://tiles/maps/template_wall_stairs_2.tscn" id="27_j1gxj"]
+[ext_resource type="PackedScene" uid="uid://dyg18nqa2od5n" path="res://tiles/maps/template_wall_top_2.tscn" id="28_rffwn"]
+[ext_resource type="PackedScene" uid="uid://c6c110i4sctqi" path="res://tiles/maps/corridor_intersection_2.tscn" id="32_2snoa"]
+[ext_resource type="PackedScene" uid="uid://cm8et6rx4oiqq" path="res://tiles/maps/corridor_junction_2.tscn" id="33_i02pw"]
+[ext_resource type="PackedScene" uid="uid://bf3eg1rpjabe6" path="res://tiles/maps/corridor_transition_2.tscn" id="34_4fkqd"]
+[ext_resource type="PackedScene" uid="uid://bthnu8l0etipm" path="res://tiles/maps/corridor_wide_2.tscn" id="35_chbxu"]
+[ext_resource type="PackedScene" uid="uid://bfvx0euibj6bo" path="res://tiles/maps/corridor_wide_corner_2.tscn" id="36_6cadk"]
+[ext_resource type="PackedScene" uid="uid://b856asd13v33m" path="res://tiles/maps/corridor_wide_end_2.tscn" id="37_wfa3a"]
+[ext_resource type="PackedScene" uid="uid://bs4fybbv4nkb3" path="res://tiles/maps/corridor_wide_intersection_2.tscn" id="38_1m7xn"]
+[ext_resource type="PackedScene" uid="uid://caj4ba80cexcd" path="res://tiles/maps/corridor_wide_junction_2.tscn" id="39_yjjpp"]
+
+[node name="Dungeontiles" type="Node3D" unique_id=2080336726]
+
+[node name="gate2" parent="." unique_id=1739718896 instance=ExtResource("1_cqn28")]
+
+[node name="gate-door2" parent="." unique_id=1687687174 instance=ExtResource("2_4nv7q")]
+
+[node name="gate-door-window2" parent="." unique_id=787366568 instance=ExtResource("3_galxx")]
+
+[node name="gate-metal-bars2" parent="." unique_id=1367986601 instance=ExtResource("4_1xknj")]
+
+[node name="room-corner2" parent="." unique_id=104269719 instance=ExtResource("5_2dgvg")]
+
+[node name="room-large2" parent="." unique_id=914102067 instance=ExtResource("6_avba6")]
+
+[node name="room-large-variation2" parent="." unique_id=817945884 instance=ExtResource("7_iaaqx")]
+
+[node name="room-small2" parent="." unique_id=149741235 instance=ExtResource("8_xmu4x")]
+
+[node name="room-small-variation2" parent="." unique_id=62789616 instance=ExtResource("9_30b4y")]
+
+[node name="room-wide2" parent="." unique_id=1087469514 instance=ExtResource("10_q3rpt")]
+
+[node name="room-wide-variation2" parent="." unique_id=120603697 instance=ExtResource("11_uavjk")]
+
+[node name="stairs2" parent="." unique_id=388624481 instance=ExtResource("12_xye08")]
+
+[node name="stairs-wide2" parent="." unique_id=196123770 instance=ExtResource("13_nhg8r")]
+
+[node name="template-corner2" parent="." unique_id=1067892274 instance=ExtResource("14_5qstq")]
+
+[node name="template-detail2" parent="." unique_id=655544305 instance=ExtResource("15_6wtwp")]
+
+[node name="template-floor2" parent="." unique_id=465317692 instance=ExtResource("16_bn6aa")]
+
+[node name="template-floor-big2" parent="." unique_id=1706211610 instance=ExtResource("17_4lbyl")]
+
+[node name="template-floor-detail2" parent="." unique_id=2058889556 instance=ExtResource("18_8pnxg")]
+
+[node name="template-floor-detail-a2" parent="." unique_id=876530527 instance=ExtResource("19_3033a")]
+
+[node name="template-floor-layer2" parent="." unique_id=208074211 instance=ExtResource("20_wjg47")]
+
+[node name="template-floor-layer-hole2" parent="." unique_id=775827282 instance=ExtResource("21_ltw3g")]
+
+[node name="template-floor-layer-raised2" parent="." unique_id=1151047680 instance=ExtResource("22_spalu")]
+
+[node name="template-wall2" parent="." unique_id=1305554726 instance=ExtResource("23_f8ukl")]
+
+[node name="template-wall-corner2" parent="." unique_id=1243459008 instance=ExtResource("24_6po0b")]
+
+[node name="template-wall-detail-a2" parent="." unique_id=273969774 instance=ExtResource("25_qac73")]
+
+[node name="template-wall-half2" parent="." unique_id=33074117 instance=ExtResource("26_8pxwi")]
+
+[node name="template-wall-stairs2" parent="." unique_id=2031792724 instance=ExtResource("27_j1gxj")]
+
+[node name="template-wall-top2" parent="." unique_id=1153802073 instance=ExtResource("28_rffwn")]
+
+[node name="corridor2" parent="." unique_id=587174825 instance=ExtResource("1_plmxm")]
+
+[node name="corridor-corner2" parent="." unique_id=1505858194 instance=ExtResource("2_7d7kr")]
+
+[node name="corridor-end2" parent="." unique_id=1536120344 instance=ExtResource("3_38mi7")]
+
+[node name="corridor-intersection2" parent="." unique_id=1195863771 instance=ExtResource("32_2snoa")]
+
+[node name="corridor-junction2" parent="." unique_id=106176788 instance=ExtResource("33_i02pw")]
+
+[node name="corridor-transition2" parent="." unique_id=321597831 instance=ExtResource("34_4fkqd")]
+
+[node name="corridor-wide2" parent="." unique_id=1587654868 instance=ExtResource("35_chbxu")]
+
+[node name="corridor-wide-corner2" parent="." unique_id=1545725853 instance=ExtResource("36_6cadk")]
+
+[node name="corridor-wide-end2" parent="." unique_id=1964118933 instance=ExtResource("37_wfa3a")]
+
+[node name="corridor-wide-intersection2" parent="." unique_id=709071310 instance=ExtResource("38_1m7xn")]
+
+[node name="corridor-wide-junction2" parent="." unique_id=496758482 instance=ExtResource("39_yjjpp")]

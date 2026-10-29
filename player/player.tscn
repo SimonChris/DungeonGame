@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dtaupr2axrwwc"]
+
+[ext_resource type="Script" uid="uid://rqmaxawwqkqf" path="res://player/player.gd" id="1_oul6g"]
+[ext_resource type="Script" uid="uid://b4d1cgk8auike" path="res://player/fp_cam.gd" id="2_rkbax"]
+[ext_resource type="Script" uid="uid://c0mu57ie6r4e3" path="res://player/interact.gd" id="3_g1dw6"]
+[ext_resource type="AudioStream" uid="uid://chjbk125dsq67" path="res://sounds/jump.wav" id="4_yw30f"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kqu6x"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_oul6g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1g76q"]
+font_size = 50
+
+[node name="player" type="CharacterBody3D" unique_id=1440495812]
+script = ExtResource("1_oul6g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1845400938]
+shape = SubResource("CapsuleShape3D_kqu6x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=494771913]
+mesh = SubResource("CapsuleMesh_oul6g")
+
+[node name="head" type="Node3D" parent="." unique_id=856272291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6847535, -0.109773636)
+script = ExtResource("2_rkbax")
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=2092348478]
+
+[node name="RayCast3D" type="RayCast3D" parent="head" unique_id=1401838157 node_paths=PackedStringArray("message")]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0)
+target_position = Vector3(0, -1.5, 0)
+script = ExtResource("3_g1dw6")
+message = NodePath("../../player_ui/interact_message")
+
+[node name="player_ui" type="Control" parent="." unique_id=1598863857]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="interact_message" type="Label" parent="player_ui" unique_id=1371038036]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 411.0
+offset_right = 683.0
+offset_bottom = 480.0
+text = "(E) Interact"
+label_settings = SubResource("LabelSettings_1g76q")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1770788373]
+stream = ExtResource("4_yw30f")
