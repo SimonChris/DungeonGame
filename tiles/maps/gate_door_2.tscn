@@ -32,6 +32,8 @@ shape = SubResource("ConcavePolygonShape3D_vjos5")
 
 [node name="OpenSoundPlayer" type="AudioStreamPlayer3D" parent="." index="2" unique_id=1432425041]
 stream = ExtResource("3_sge6p")
+max_distance = 10.0
 
 [node name="ClosingSoundPlayer" type="AudioStreamPlayer3D" parent="." index="3" unique_id=1634758390]
 stream = ExtResource("4_kmcp3")
+max_distance = 10.0
