@@ -36,5 +36,6 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	if position.y < -50:
-		get_tree().quit()
+	if position.y < -100:
+		position = Vector3(6.0, 2.6, -1.0)
+		#get_tree().quit()

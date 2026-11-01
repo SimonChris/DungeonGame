@@ -20,6 +20,8 @@ stream = ExtResource("3_u1my3")
 max_distance = 10.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="RootNode" parent_id_path=PackedInt32Array(1082094509) index="1" unique_id=2027444790]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04892695, 0.60260046, 0.12135351)
-light_color = Color(0.99607843, 0.48235294, 0, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04892695, 0.60260046, 0.12072295)
+light_color = Color(1, 0.58128166, 0.31393594, 1)
+light_energy = 2.0
 distance_fade_enabled = true
+omni_range = 7.0
