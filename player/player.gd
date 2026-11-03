@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 const SPEED = 4.0
-const JUMP_VELOCITY = 7
+const JUMP_VELOCITY = 5
 
 signal flee
 
@@ -36,6 +36,6 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	if position.y < -100:
+	if position.y < -25:
 		position = Vector3(6.0, 2.6, -1.0)
 		#get_tree().quit()

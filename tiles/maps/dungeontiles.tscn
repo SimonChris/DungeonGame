@@ -72,7 +72,7 @@
 
 [node name="template-detail2" parent="." unique_id=655544305 instance=ExtResource("15_6wtwp")]
 
-[node name="template-floor2" parent="." unique_id=465317692 instance=ExtResource("16_bn6aa")]
+[node name="template-floor2" parent="." unique_id=1172511571 instance=ExtResource("16_bn6aa")]
 
 [node name="template-floor-big2" parent="." unique_id=1706211610 instance=ExtResource("17_4lbyl")]
 

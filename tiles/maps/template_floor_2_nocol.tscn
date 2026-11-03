@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dlfc0bkh1ddt1"]
+
+[ext_resource type="PackedScene" uid="uid://bc0pdgs1125a7" path="res://tiles/template-floor.glb" id="1_fvq6r"]
+
+[node name="template-floor2" unique_id=465317692 instance=ExtResource("1_fvq6r")]
