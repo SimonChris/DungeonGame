@@ -3,9 +3,12 @@ extends CharacterBody3D
 const SPEED = 4.0
 const JUMP_VELOCITY = 5
 
-signal flee
+@export var teleport_target : Node3D
 
 func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("teleport"):
+		position = teleport_target.position
+		
 	if Input.is_action_just_pressed("mouse_toggle"):
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
