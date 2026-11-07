@@ -17,6 +17,7 @@ sky_material = SubResource("ProceduralSkyMaterial_tlwt5")
 background_mode = 2
 sky = SubResource("Sky_fj7yv")
 ambient_light_source = 1
+reflected_light_source = 1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_036b0"]
 size = Vector3(1, 4, 1)
@@ -46,51 +47,11 @@ teleport_target = NodePath("../TargetNode")
 [node name="gate-door3" parent="." unique_id=1970759612 instance=ExtResource("3_tlwt5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.0597305, 1, -1.0193214)
 
-[node name="Torch" parent="." unique_id=1270004369 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.8741779, 2.3423343, -2.1469815)
+[node name="gate-door4" parent="." unique_id=1687687174 instance=ExtResource("3_tlwt5")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -26.781178, 1, -1.0193214)
 
-[node name="Torch2" parent="." unique_id=942430955 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 2.4762301, 2.3423343, 0.13830304)
-visible = false
-
-[node name="Torch3" parent="." unique_id=1805737257 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -5.5103703, 2.3423343, 0.13830304)
-visible = false
-
-[node name="Torch4" parent="." unique_id=932611437 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -13.044292, 2.3423343, 7.663772)
-visible = false
-
-[node name="Torch5" parent="." unique_id=266206044 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -20.899643, 2.3423343, 7.663772)
-visible = false
-
-[node name="Torch13" parent="." unique_id=425726372 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -28.684607, 2.3423343, 0.16479325)
-
-[node name="Torch10" parent="." unique_id=2141938269 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -26.060131, 2.3423343, 4.8169045)
-visible = false
-
-[node name="Torch11" parent="." unique_id=1353867667 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -25.933136, 2.3423343, -7.1235228)
-visible = false
-
-[node name="Torch6" parent="." unique_id=1088549440 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.994276, 2.3423343, -9.658531)
-visible = false
-
-[node name="Torch7" parent="." unique_id=1165960626 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.050823, 2.3423343, -9.615227)
-visible = false
-
-[node name="Torch8" parent="." unique_id=1511233149 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -7.9769454, 2.3423343, -6.8610444)
-visible = false
-
-[node name="Torch9" parent="." unique_id=434969019 instance=ExtResource("4_aqk2v")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -7.891644, 2.3423343, 4.9981685)
-visible = false
+[node name="gate-door5" parent="." unique_id=1657552067 instance=ExtResource("3_tlwt5")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -54.914013, 1, -1.0193214)
 
 [node name="pillar_interact" type="StaticBody3D" parent="." unique_id=1871783669]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9905205, 3.3339598, -2.9775038)
@@ -240,7 +201,45 @@ metadata/_edit_group_ = true
 [node name="TargetNode" parent="." unique_id=447218836 instance=ExtResource("7_pkg7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.86818, 4.2309537, 20.33796)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=739558598]
+[node name="cylinder_shaft" type="MeshInstance3D" parent="." unique_id=739558598]
 transform = Transform3D(5.054, 0, 0, 0, 28.130836, 0, 0, 0, 4.4, -60.21456, -6.0587835, 23.287235)
 mesh = SubResource("TorusMesh_g7kvu")
 surface_material_override/0 = SubResource("StandardMaterial3D_14xom")
+
+[node name="torches" type="Node3D" parent="." unique_id=888116773]
+
+[node name="Torch" parent="torches" unique_id=1270004369 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.8741779, 2.3423343, -2.1469815)
+
+[node name="Torch2" parent="torches" unique_id=942430955 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 2.4762301, -1.4572207, 32.547577)
+
+[node name="Torch3" parent="torches" unique_id=1805737257 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 10.786442, -0.8518902, 50.045746)
+
+[node name="Torch4" parent="torches" unique_id=932611437 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -13.999489, -1.3807969, 31.990246)
+
+[node name="Torch5" parent="torches" unique_id=266206044 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -20.899643, 2.3423343, 7.663772)
+
+[node name="Torch13" parent="torches" unique_id=425726372 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -29.2133, 2.984458, 20.085482)
+
+[node name="Torch10" parent="torches" unique_id=2141938269 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -70.23666, 2.6539862, 1.1748829)
+
+[node name="Torch11" parent="torches" unique_id=1353867667 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -50.08346, 2.3423343, -7.1235228)
+
+[node name="Torch6" parent="torches" unique_id=1088549440 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.829147, 6.616915, -38.182964)
+
+[node name="Torch7" parent="torches" unique_id=1165960626 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.050823, 2.3423343, -9.615227)
+
+[node name="Torch8" parent="torches" unique_id=1511233149 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -2.0703135, 6.797883, -33.61564)
+
+[node name="Torch9" parent="torches" unique_id=434969019 instance=ExtResource("4_aqk2v")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -47.967567, 2.6220007, 3.8888736)
