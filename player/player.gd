@@ -1,7 +1,10 @@
 extends CharacterBody3D
 
-const SPEED = 4.0
+const SPEED = 3.0
 const JUMP_VELOCITY = 5
+
+var time_since_last_step = Time.get_ticks_msec()
+const STEP_DURATION : int = 750
 
 @export var teleport_target : Node3D
 
@@ -25,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 	#if Input.is_action_just_pressed("jump"):
 		velocity.y = JUMP_VELOCITY
-		$AudioStreamPlayer3D.play()
+		$jump_player.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir := Input.get_vector("left", "right", "forward", "backward")
@@ -38,6 +41,12 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+	var horizontal_velocity := Vector3(velocity.x, 0, velocity.z)
+	if horizontal_velocity.length_squared() > 0.1 and is_on_floor():
+		if Time.get_ticks_msec() - time_since_last_step > STEP_DURATION:
+			$step_player.play()
+			time_since_last_step = Time.get_ticks_msec()
 	
 	if position.y < -25:
 		position = Vector3(6.0, 2.6, -1.0)

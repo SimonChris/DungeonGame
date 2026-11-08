@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b4d1cgk8auike" path="res://player/fp_cam.gd" id="2_rkbax"]
 [ext_resource type="Script" uid="uid://c0mu57ie6r4e3" path="res://player/interact.gd" id="3_g1dw6"]
 [ext_resource type="AudioStream" uid="uid://chjbk125dsq67" path="res://sounds/jump.wav" id="4_yw30f"]
+[ext_resource type="AudioStream" uid="uid://n66nhowru5sj" path="res://sounds/step5.mp3" id="5_qjkh3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kqu6x"]
 
@@ -48,10 +49,14 @@ offset_bottom = 480.0
 text = "(E) Interact"
 label_settings = SubResource("LabelSettings_1g76q")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1770788373]
+[node name="jump_player" type="AudioStreamPlayer3D" parent="." unique_id=1770788373]
 stream = ExtResource("4_yw30f")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=904730285]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25435466, -0.7893295)
 light_color = Color(1, 0.5803922, 0.3137255, 1)
 omni_range = 7.0
+
+[node name="step_player" type="AudioStreamPlayer3D" parent="." unique_id=980598799]
+stream = ExtResource("5_qjkh3")
+volume_db = -30.0
