@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://joedv4ghpdxr"]
+
+[ext_resource type="Script" uid="uid://dyfvu8cn78alw" path="res://objects/pillar_interact.gd" id="1_0mxhx"]
+[ext_resource type="Script" uid="uid://gvxpqr54mc3g" path="res://pillar_collision.gd" id="1_dkust"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0mxhx"]
+size = Vector3(1, 4, 1)
+
+[node name="PillarInteract" type="Node3D" unique_id=1393311600]
+script = ExtResource("1_0mxhx")
+
+[node name="pillar_interact" type="StaticBody3D" parent="." unique_id=912813551]
+script = ExtResource("1_dkust")
+
+[node name="pillar_collision" type="CollisionShape3D" parent="pillar_interact" unique_id=2097719973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.008)
+shape = SubResource("BoxShape3D_0mxhx")

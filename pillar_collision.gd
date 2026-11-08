@@ -6,4 +6,5 @@ func getInteractMessage() -> String:
 	return message
 
 func onInteract() -> void:
+	get_parent().onInteract()
 	message = "The pillar awaits"
