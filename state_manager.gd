@@ -5,3 +5,5 @@ var adumbrations : int = 0
 func _on_pillar_interacted() -> void:
 	adumbrations += 1
 	print("Adumbrations: " + str(adumbrations))
+	if(adumbrations == 4):
+		print("All pillars adumbrated!")

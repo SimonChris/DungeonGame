@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dyfvu8cn78alw" path="res://objects/pillar_interact.gd" id="1_0mxhx"]
 [ext_resource type="Script" uid="uid://gvxpqr54mc3g" path="res://pillar_collision.gd" id="1_dkust"]
+[ext_resource type="AudioStream" uid="uid://c0uobfepk8qw8" path="res://sounds/woosh.mp3" id="3_0tq3h"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0mxhx"]
 size = Vector3(1, 4, 1)
@@ -15,3 +16,6 @@ script = ExtResource("1_dkust")
 [node name="pillar_collision" type="CollisionShape3D" parent="pillar_interact" unique_id=2097719973]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.008)
 shape = SubResource("BoxShape3D_0mxhx")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="pillar_interact" unique_id=1287967985]
+stream = ExtResource("3_0tq3h")
