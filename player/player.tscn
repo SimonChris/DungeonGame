@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://rqmaxawwqkqf" path="res://player/player.gd" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://b4d1cgk8auike" path="res://player/fp_cam.gd" id="2_rkbax"]
 [ext_resource type="Script" uid="uid://c0mu57ie6r4e3" path="res://player/interact.gd" id="3_g1dw6"]
+[ext_resource type="PackedScene" uid="uid://dpxyqlanc2n67" path="res://ui/text_box.tscn" id="4_g6k8r"]
 [ext_resource type="AudioStream" uid="uid://chjbk125dsq67" path="res://sounds/jump.wav" id="4_yw30f"]
 [ext_resource type="AudioStream" uid="uid://n66nhowru5sj" path="res://sounds/step5.mp3" id="5_qjkh3"]
 
@@ -13,8 +14,9 @@
 [sub_resource type="LabelSettings" id="LabelSettings_1g76q"]
 font_size = 50
 
-[node name="player" type="CharacterBody3D" unique_id=1440495812]
+[node name="player" type="CharacterBody3D" unique_id=1440495812 node_paths=PackedStringArray("text_box")]
 script = ExtResource("1_oul6g")
+text_box = NodePath("player_ui/TextBox")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1845400938]
 shape = SubResource("CapsuleShape3D_kqu6x")
@@ -37,17 +39,21 @@ message = NodePath("../../player_ui/interact_message")
 [node name="player_ui" type="Control" parent="." unique_id=1598863857]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1152.0
+offset_bottom = 648.0
 
 [node name="interact_message" type="Label" parent="player_ui" unique_id=1371038036]
+visible = false
 layout_mode = 0
-offset_left = 419.0
 offset_top = 411.0
-offset_right = 683.0
+offset_right = 1152.0
 offset_bottom = 480.0
 text = "(E) Interact"
 label_settings = SubResource("LabelSettings_1g76q")
+horizontal_alignment = 1
+
+[node name="TextBox" parent="player_ui" unique_id=2060420804 instance=ExtResource("4_g6k8r")]
+layout_mode = 1
 
 [node name="jump_player" type="AudioStreamPlayer3D" parent="." unique_id=1770788373]
 stream = ExtResource("4_yw30f")

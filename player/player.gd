@@ -7,8 +7,15 @@ var time_since_last_step = Time.get_ticks_msec()
 const STEP_DURATION : int = 750
 
 @export var teleport_target : Node3D
+@export var text_box : Control
 
 func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("jump"):
+		text_box.visible = false
+		
+	if text_box.visible:
+		return
+	
 	if Input.is_action_just_pressed("teleport"):
 		position = teleport_target.position
 		
@@ -50,4 +57,5 @@ func _physics_process(delta: float) -> void:
 	
 	if position.y < -25:
 		position = Vector3(6.0, 2.6, -1.0)
+
 		#get_tree().quit()

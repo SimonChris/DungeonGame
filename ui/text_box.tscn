@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dpxyqlanc2n67"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1g76q"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_g7kvu"]
+font_size = 20
+
+[node name="TextBox" type="Control" unique_id=2060420804]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRectBG" type="ColorRect" parent="." unique_id=1406540714]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.18039216, 0.18039216, 0.18039216, 0.24705882)
+
+[node name="ColorRectBox" type="ColorRect" parent="." unique_id=592409466]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 63.0
+offset_right = 951.0
+offset_bottom = 566.0
+color = Color(0.13333334, 0.13333334, 0.13333334, 0.41568628)
+
+[node name="Label" type="Label" parent="." unique_id=169051669]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 115.0
+offset_right = 891.0
+offset_bottom = 450.0
+text = "Welcome, weary traveller, to the fabled Tomb of Zee-Mon!"
+label_settings = SubResource("LabelSettings_1g76q")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1254919357]
+visible = false
+layout_mode = 0
+offset_left = 316.0
+offset_top = 470.0
+offset_right = 505.0
+offset_bottom = 524.0
+text = "(Enter) Close"
+label_settings = SubResource("LabelSettings_g7kvu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=542638582]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 458.0
+offset_right = 476.0
+offset_bottom = 517.0
+text = "(Space) Close"
