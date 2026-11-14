@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bmlvrcirpcies"]
+
+[ext_resource type="PackedScene" uid="uid://bsyma43hsli4w" path="res://characters/character-r.glb" id="1_v0vdt"]
+
+[node name="character-r2" unique_id=1833219397 instance=ExtResource("1_v0vdt")]

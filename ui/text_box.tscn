@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dpxyqlanc2n67"]
 
+[ext_resource type="Script" uid="uid://ccdq2imk8sbk7" path="res://ui/text_box.gd" id="1_7i4yi"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_1g76q"]
 font_size = 20
 
@@ -13,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7i4yi")
 
 [node name="ColorRectBG" type="ColorRect" parent="." unique_id=1406540714]
 layout_mode = 0
@@ -29,6 +32,7 @@ offset_bottom = 566.0
 color = Color(0.13333334, 0.13333334, 0.13333334, 0.41568628)
 
 [node name="Label" type="Label" parent="." unique_id=169051669]
+visible = false
 layout_mode = 0
 offset_left = 300.0
 offset_top = 115.0

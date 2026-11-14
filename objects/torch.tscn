@@ -9,7 +9,7 @@ size = Vector3(0.002782746, 0.004376472, 0.011506481)
 
 [node name="Torch" unique_id=1270004369 instance=ExtResource("1_i3qqe")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Torch" parent_id_path=PackedInt32Array(1687347479) index="0" unique_id=34495148]
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Torch" parent_id_path=PackedInt32Array(2016468562) index="0" unique_id=34495148]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0007471953, 0.0030453918)
 script = ExtResource("2_f3qhp")
 
@@ -21,7 +21,7 @@ max_distance = 10.0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Torch/StaticBody3D" index="1" unique_id=1701102750]
 shape = SubResource("BoxShape3D_f3qhp")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="RootNode" parent_id_path=PackedInt32Array(1082094509) index="1" unique_id=2027444790]
+[node name="OmniLight3D" type="OmniLight3D" parent="RootNode" parent_id_path=PackedInt32Array(2021673894) index="1" unique_id=2027444790]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04892695, 0.60260046, 0.12072295)
 light_color = Color(1, 0.58128166, 0.31393594, 1)
 light_energy = 2.0

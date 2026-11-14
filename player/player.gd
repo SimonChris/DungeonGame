@@ -9,24 +9,18 @@ const STEP_DURATION : int = 750
 @export var teleport_target : Node3D
 @export var text_box : Control
 
+func _ready() -> void:
+	text_box.setBoxText("Welcome, weary traveller, to the fabled tomb of See-Mon!\n\nTreasure and wisdom awaits within!")
+	text_box.setButtonOneText("(Space) Close")
+	text_box.setCloseAction("jump")
+
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("jump"):
-		text_box.visible = false
-		
 	if text_box.visible:
 		return
 	
 	if Input.is_action_just_pressed("teleport"):
 		position = teleport_target.position
-		
-	if Input.is_action_just_pressed("mouse_toggle"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		else:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-			
-	if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
-		return
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
