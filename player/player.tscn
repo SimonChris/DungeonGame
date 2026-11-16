@@ -30,11 +30,12 @@ script = ExtResource("2_rkbax")
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=2092348478]
 
-[node name="RayCast3D" type="RayCast3D" parent="head" unique_id=1401838157 node_paths=PackedStringArray("message")]
+[node name="RayCast3D" type="RayCast3D" parent="head" unique_id=1401838157 node_paths=PackedStringArray("message", "text_box")]
 transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0)
 target_position = Vector3(0, -1.5, 0)
 script = ExtResource("3_g1dw6")
 message = NodePath("../../player_ui/interact_message")
+text_box = NodePath("../../player_ui/TextBox")
 
 [node name="player_ui" type="Control" parent="." unique_id=1598863857]
 layout_mode = 3

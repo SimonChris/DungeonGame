@@ -5,9 +5,6 @@
 [sub_resource type="LabelSettings" id="LabelSettings_1g76q"]
 font_size = 20
 
-[sub_resource type="LabelSettings" id="LabelSettings_g7kvu"]
-font_size = 20
-
 [node name="TextBox" type="Control" unique_id=2060420804]
 layout_mode = 3
 anchors_preset = 15
@@ -32,7 +29,6 @@ offset_bottom = 566.0
 color = Color(0.13333334, 0.13333334, 0.13333334, 0.41568628)
 
 [node name="Label" type="Label" parent="." unique_id=169051669]
-visible = false
 layout_mode = 0
 offset_left = 300.0
 offset_top = 115.0
@@ -43,22 +39,26 @@ label_settings = SubResource("LabelSettings_1g76q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="." unique_id=1254919357]
-visible = false
+[node name="Button1" type="Button" parent="." unique_id=542638582]
 layout_mode = 0
-offset_left = 316.0
-offset_top = 470.0
-offset_right = 505.0
-offset_bottom = 524.0
-text = "(Enter) Close"
-label_settings = SubResource("LabelSettings_g7kvu")
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 306.0
+offset_top = 456.0
+offset_right = 465.0
+offset_bottom = 515.0
+text = "(Space) Close"
 
-[node name="Button" type="Button" parent="." unique_id=542638582]
+[node name="Button2" type="Button" parent="." unique_id=272857844]
 layout_mode = 0
-offset_left = 317.0
-offset_top = 458.0
-offset_right = 476.0
-offset_bottom = 517.0
+offset_left = 513.0
+offset_top = 456.0
+offset_right = 672.0
+offset_bottom = 515.0
+text = "(Space) Close"
+
+[node name="Button3" type="Button" parent="." unique_id=334974031]
+layout_mode = 0
+offset_left = 719.0
+offset_top = 456.0
+offset_right = 878.0
+offset_bottom = 515.0
 text = "(Space) Close"

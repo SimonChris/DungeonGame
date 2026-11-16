@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://begvp2m75ml5t"]
 
 [ext_resource type="PackedScene" uid="uid://b4ip64s6hd5dk" path="res://characters/character-k.glb" id="1_i4i8r"]
+[ext_resource type="Script" uid="uid://dscnq6fenvg47" path="res://characters/character_red.gd" id="2_2ycmo"]
 [ext_resource type="Texture2D" uid="uid://c4imbxq5tqah8" path="res://characters/Textures/texture-k.png" id="2_cuvad"]
+[ext_resource type="Script" uid="uid://cxx34welwreee" path="res://characters/character_interact.gd" id="4_4ab1p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cuvad"]
 albedo_texture = ExtResource("2_cuvad")
@@ -26,28 +28,31 @@ size = Vector3(1.5326416, 2.6462646, 0.6)
 
 [node name="character-k2" unique_id=961245597 instance=ExtResource("1_i4i8r")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+script = ExtResource("2_2ycmo")
 
-[node name="leg-left" parent="character-k/root" parent_id_path=PackedInt32Array(2103881141) index="0" unique_id=1860694833]
+[node name="leg-left" parent="character-k/root" parent_id_path=PackedInt32Array(31887216) index="0" unique_id=1174195109]
 material_override = SubResource("StandardMaterial3D_cuvad")
 
-[node name="leg-right" parent="character-k/root" parent_id_path=PackedInt32Array(2103881141) index="1" unique_id=268494054]
+[node name="leg-right" parent="character-k/root" parent_id_path=PackedInt32Array(31887216) index="1" unique_id=759197002]
 material_override = SubResource("StandardMaterial3D_2ycmo")
 
-[node name="torso" parent="character-k/root" parent_id_path=PackedInt32Array(2103881141) index="2" unique_id=1030406609]
+[node name="torso" parent="character-k/root" parent_id_path=PackedInt32Array(31887216) index="2" unique_id=1664177210]
 material_override = SubResource("StandardMaterial3D_4ab1p")
 
-[node name="arm-left" parent="character-k/root/torso" index="0" unique_id=688696476]
+[node name="arm-left" parent="character-k/root/torso" index="0" unique_id=1127364747]
 material_override = SubResource("StandardMaterial3D_0ytq5")
 
-[node name="arm-right" parent="character-k/root/torso" index="1" unique_id=1090519921]
+[node name="arm-right" parent="character-k/root/torso" index="1" unique_id=1407941986]
 material_override = SubResource("StandardMaterial3D_m673a")
 
-[node name="head" parent="character-k/root/torso" index="2" unique_id=1761750541]
+[node name="head" parent="character-k/root/torso" index="2" unique_id=483948552]
 material_override = SubResource("StandardMaterial3D_ha1ej")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="character-k/root/torso" index="3" unique_id=1536367395]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+[node name="StaticBody3D" type="StaticBody3D" parent="character-k/root" parent_id_path=PackedInt32Array(31887216) index="3" unique_id=1536367395 node_paths=PackedStringArray("top_parent")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0)
+script = ExtResource("4_4ab1p")
+top_parent = NodePath("../../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="character-k/root/torso/StaticBody3D" index="0" unique_id=54966733]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="character-k/root/StaticBody3D" index="0" unique_id=54966733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01834713, -0.044543505, 0)
 shape = SubResource("BoxShape3D_i4i8r")
