@@ -1,6 +1,7 @@
 extends Control
 
 var close_action : String
+@export var message_box : Control
 
 func _ready() -> void:
 	$Button1.visible = false
@@ -20,6 +21,8 @@ func setCloseAction(actionName : String):
 func setBoxText(text):
 	$Label.text = text
 	$Label.visible = true
+	visible = true
+	message_box.visible = false
 		
 func setButtonOneText(text):
 	$Button1.text = text

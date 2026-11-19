@@ -10,7 +10,7 @@ const STEP_DURATION : int = 750
 @export var text_box : Control
 
 func _ready() -> void:
-	text_box.setBoxText("Welcome, weary traveller, to the fabled tomb of See-Mon!\n\nTreasure and wisdom awaits within!")
+	text_box.setBoxText("Welcome, weary traveller, to the fabled tomb of Zee-Mon!\n\nTreasure and wisdom awaits within!")
 	text_box.setButtonOneText("(Space) Close")
 	text_box.setCloseAction("jump")
 

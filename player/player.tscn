@@ -53,8 +53,9 @@ text = "(E) Interact"
 label_settings = SubResource("LabelSettings_1g76q")
 horizontal_alignment = 1
 
-[node name="TextBox" parent="player_ui" unique_id=2060420804 instance=ExtResource("4_g6k8r")]
+[node name="TextBox" parent="player_ui" unique_id=2060420804 node_paths=PackedStringArray("message_box") instance=ExtResource("4_g6k8r")]
 layout_mode = 1
+message_box = NodePath("../interact_message")
 
 [node name="jump_player" type="AudioStreamPlayer3D" parent="." unique_id=1770788373]
 stream = ExtResource("4_yw30f")
