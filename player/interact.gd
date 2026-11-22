@@ -3,7 +3,7 @@ extends RayCast3D
 @export var message: Control
 @export var text_box: Control
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if text_box.visible:
 		return;
 		
@@ -13,7 +13,6 @@ func _physics_process(delta: float) -> void:
 		message.visible = true
 		if Input.is_action_just_pressed("interact"):
 			var interact_result = hit.onInteract()
-			print(interact_result)
 			if interact_result == null:
 				return
 			

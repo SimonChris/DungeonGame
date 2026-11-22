@@ -29,6 +29,7 @@ offset_bottom = 566.0
 color = Color(0.13333334, 0.13333334, 0.13333334, 0.41568628)
 
 [node name="Label" type="Label" parent="." unique_id=169051669]
+custom_minimum_size = Vector2(1, 1)
 layout_mode = 0
 offset_left = 300.0
 offset_top = 115.0

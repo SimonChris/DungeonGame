@@ -236,8 +236,9 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -26.
 [node name="gate-door5" parent="doors" unique_id=1657552067 instance=ExtResource("3_tlwt5")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -54.914013, 1, -1.0193214)
 
-[node name="character-k2" parent="." unique_id=961245597 instance=ExtResource("9_ioo17")]
+[node name="character-k2" parent="." unique_id=961245597 node_paths=PackedStringArray("state_manager") instance=ExtResource("9_ioo17")]
 transform = Transform3D(0.53033006, 0, 0.53033006, 0, 0.75, 0, -0.53033006, 0, 0.53033006, -23.839436, 1, -6.447447)
+state_manager = NodePath("../StateManager")
 
 [connection signal="interacted" from="pillars/pillar_interact1" to="StateManager" method="_on_pillar_interacted"]
 [connection signal="interacted" from="pillars/pillar_interact2" to="StateManager" method="_on_pillar_interacted"]

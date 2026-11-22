@@ -7,3 +7,6 @@ func _on_pillar_interacted() -> void:
 	print("Adumbrations: " + str(adumbrations))
 	if(adumbrations == 4):
 		print("All pillars adumbrated!")
+
+func getAdumbrationNumber() -> int:
+	return adumbrations

@@ -8,7 +8,7 @@ func _ready() -> void:
 	$Button2.visible = false
 	$Button3.visible = false
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if !visible:
 		return
 		
