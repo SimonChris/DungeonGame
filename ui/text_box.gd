@@ -11,8 +11,8 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if !visible:
 		return
-		
-	if Input.is_action_just_pressed(close_action):
+
+	if Input.is_action_just_released(close_action): # Do not trigger other actions
 		visible = false
 
 func setCloseAction(actionName : String):
