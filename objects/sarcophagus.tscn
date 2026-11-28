@@ -61,7 +61,6 @@ shape = SubResource("ConcavePolygonShape3D_utqm0")
 
 [node name="lid" type="MeshInstance3D" parent="." unique_id=2025679889]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
-visible = false
 mesh = SubResource("ArrayMesh_qc0kt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="lid" unique_id=2014046218]
